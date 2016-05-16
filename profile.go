@@ -26,7 +26,7 @@ type ProfileBlob struct {
 
 /*
 	google profile returns array of emails based on number of gmail sessions user is logged in as
-	So this helps capture them all so we can later parse for pivotal.io address
+	So this helps capture them all so we can later parse for address
 */
 type Emails struct {
 	Value string
