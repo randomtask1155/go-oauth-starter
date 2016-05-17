@@ -329,6 +329,7 @@ func main() {
 
   // File serving handlers
 	http.Handle("/img/", http.FileServer(http.Dir("")))
+  http.Handle("/fonts/", http.FileServer(http.Dir("")))
 	http.Handle("/js/", http.FileServer(http.Dir("")))
 	http.Handle("/css/", http.FileServer(http.Dir("")))
 	err := http.ListenAndServe(":"+os.Getenv("PORT"), context.ClearHandler(http.DefaultServeMux))
